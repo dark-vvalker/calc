@@ -3,7 +3,6 @@ import { Card, CloseButton, Col, Row } from "react-bootstrap";
 import Image from "./Image";
 
 export default function CartItem({ item, remove }) {
-  console.log(item);
   return (
     <Card className="cart-item">
       <Row className="align-items-center">
