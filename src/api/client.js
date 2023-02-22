@@ -1,7 +1,8 @@
 import { create } from "apisauce";
 
 const apiClient = create({
-  baseURL: "https://cors-anywhere.herokuapp.com/https://openapi.keycrm.app/v1",
+  // baseURL: "https://cors-anywhere.herokuapp.com/https://openapi.keycrm.app/v1",
+  baseURL: "https://openapi.keycrm.app/v1",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
