@@ -1,0 +1,62 @@
+$blue: #357ff8 !default;
+$min-contrast-ratio: 3.5;
+
+@import "~bootstrap/scss/bootstrap";
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.image {
+  position: relative;
+  padding-bottom: 60%;
+  left: 16px;
+}
+
+.image > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.box {
+  text-align: center;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.custom-box {
+  padding: 0;
+  & input {
+    display: none;
+  }
+  & .label-box:hover {
+    background-color: #f2f2f2;
+  }
+  & input:checked + .label-box {
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 25%);
+    background-color: #ffffff;
+  }
+}
+
+.color-select {
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  display: block;
+}
+
+.cart-item {
+  position: relative;
+}
+
+.cart-item-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+
+
