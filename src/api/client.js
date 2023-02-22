@@ -8,6 +8,7 @@ const apiClient = create({
     "Content-Type": "application/json",
     Authorization:
       "Bearer NzUyYTg3MjVmOGI0ZTZjMTdjMzFhYWNiNzQxYTBlZDA0YjdjODA3Nw",
+    "Access-Control-Allow-Origin": "*",
   },
 });
 
