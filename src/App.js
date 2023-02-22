@@ -4,8 +4,10 @@ import "./App.scss";
 
 function App() {
   useEffect(() => {
-    let elRect = document.getElementById("root").getBoundingClientRect();
-    console.log(elRect);
+    let elRect = document
+      .getElementsByTagName("html")[0]
+      .getBoundingClientRect();
+
     window.parent.postMessage(
       {
         type: "resize-iframe",
