@@ -16,7 +16,7 @@ function App() {
           height: elRect.height,
         },
       },
-      "https://myaki-vikna.com.ua/"
+      "*"
     );
   }, []);
 

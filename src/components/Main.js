@@ -18,6 +18,7 @@ import { COLORS, FILM_STYLES, PRICE, SOURCE_ID } from "./constants";
 import Image from "./Image";
 import OfferModal from "./OfferModal";
 import ThankModal from "./ThankModal";
+import addOrder from "../api/order";
 
 let id = 0;
 
@@ -405,11 +406,11 @@ export default function Main() {
         };
       }),
     };
-    console.log(data);
+    // console.log(data);
     // addOrder(data);
 
     try {
-      // addOrder(data);
+      addOrder(data);
       setOfferModalShow(false);
       setToastVariant("success");
       setToastMessage("Товар успішно замовлено!");
